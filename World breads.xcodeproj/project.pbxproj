@@ -3,27 +3,83 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D59996D12944C7180025F7F8 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59996D02944C7180025F7F8 /* QuizView.swift */; };
+		D59996D32944C72F0025F7F8 /* VariantButton .swift in Sources */ = {isa = PBXBuildFile; fileRef = D59996D22944C72F0025F7F8 /* VariantButton .swift */; };
+		D59996D52944C89E0025F7F8 /* BaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59996D42944C89E0025F7F8 /* BaseExtensions.swift */; };
+		D59996D72944C95F0025F7F8 /* BaseCustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59996D62944C95F0025F7F8 /* BaseCustomViews.swift */; };
 		D59DC044293625B8009D935A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC043293625B8009D935A /* AppDelegate.swift */; };
-		D59DC046293625B8009D935A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC045293625B8009D935A /* SceneDelegate.swift */; };
-		D59DC048293625B8009D935A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC047293625B8009D935A /* ViewController.swift */; };
-		D59DC04B293625B8009D935A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59DC049293625B8009D935A /* Main.storyboard */; };
 		D59DC04D293625BE009D935A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D59DC04C293625BE009D935A /* Assets.xcassets */; };
 		D59DC050293625BE009D935A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59DC04E293625BE009D935A /* LaunchScreen.storyboard */; };
+		D59DC05A2936276E009D935A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC0592936276E009D935A /* HomeViewController.swift */; };
+		D59DC06429363102009D935A /* breads.json in Resources */ = {isa = PBXBuildFile; fileRef = D59DC06329363102009D935A /* breads.json */; };
+		D59DC06629363183009D935A /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC06529363183009D935A /* MyModel.swift */; };
+		D59DC06829363EBF009D935A /* HomeViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC06729363EBF009D935A /* HomeViewTableCell.swift */; };
+		D59DC06C293649EC009D935A /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC06B293649EC009D935A /* InfoViewController.swift */; };
+		D59DC06E29364A04009D935A /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC06D29364A04009D935A /* QuizViewController.swift */; };
+		D59DC07029364A1D009D935A /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC06F29364A1D009D935A /* CardViewController.swift */; };
+		D59DC07229364A39009D935A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC07129364A39009D935A /* SettingsViewController.swift */; };
+		D59DC074293656D8009D935A /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC073293656D8009D935A /* SettingsTableViewCell.swift */; };
+		D5B1B140293A397B00A20669 /* MainSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1B13F293A397B00A20669 /* MainSettingsViewController.swift */; };
+		D5B1B142293A4D5F00A20669 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1B141293A4D5F00A20669 /* TabBarController.swift */; };
+		D5B1B145293B9BE300A20669 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1B143293B9BE300A20669 /* TestVC.swift */; };
+		D5B1B146293B9BE300A20669 /* TestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5B1B144293B9BE300A20669 /* TestVC.xib */; };
+		D5D24A89293E280400AFEC5C /* MainSettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D24A88293E280400AFEC5C /* MainSettingsTableViewCell.swift */; };
+		D5D24A8C293EA40600AFEC5C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D24A8B293EA40600AFEC5C /* WelcomeViewController.swift */; };
+		D5D24AAC2940169F00AFEC5C /* CardCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D24AAB2940169F00AFEC5C /* CardCollectionCell.swift */; };
+		D5D24AAE2940B3F900AFEC5C /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D24AAD2940B3F900AFEC5C /* InfoModel.swift */; };
+		D5D24AB02940B60F00AFEC5C /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D24AAF2940B60F00AFEC5C /* InfoTableViewCell.swift */; };
+		D5D24AB32940C04A00AFEC5C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D24AB22940C04A00AFEC5C /* BaseViewController.swift */; };
+		D5D24AB52940C90E00AFEC5C /* BaseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D24AB42940C90E00AFEC5C /* BaseModels.swift */; };
+		D5D24AB72940E50800AFEC5C /* FoldCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D24AB62940E50800AFEC5C /* FoldCardsView.swift */; };
+		D5D24ABA2940EAE700AFEC5C /* OneItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D24AB92940EAE700AFEC5C /* OneItemViewController.swift */; };
+		D5D24ABC2940EC8400AFEC5C /* OneItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D24ABB2940EC8400AFEC5C /* OneItemView.swift */; };
+		D5D24ABE2940ECA700AFEC5C /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D24ABD2940ECA700AFEC5C /* StarRatingView.swift */; };
+		D5D24AC02940EE2200AFEC5C /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D24ABF2940EE2200AFEC5C /* BaseView.swift */; };
+		FF40F8BC993BD3A2027843BF /* Pods_World_breads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856ADFBF3C31EE7A35D1BA2A /* Pods_World_breads.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7EBE61281A451995872CD182 /* Pods-World breads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-World breads.release.xcconfig"; path = "Target Support Files/Pods-World breads/Pods-World breads.release.xcconfig"; sourceTree = "<group>"; };
+		856ADFBF3C31EE7A35D1BA2A /* Pods_World_breads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_World_breads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD38E7361EE77B897BB07375 /* Pods-World breads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-World breads.debug.xcconfig"; path = "Target Support Files/Pods-World breads/Pods-World breads.debug.xcconfig"; sourceTree = "<group>"; };
+		D59996D02944C7180025F7F8 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		D59996D22944C72F0025F7F8 /* VariantButton .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VariantButton .swift"; sourceTree = "<group>"; };
+		D59996D42944C89E0025F7F8 /* BaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseExtensions.swift; sourceTree = "<group>"; };
+		D59996D62944C95F0025F7F8 /* BaseCustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCustomViews.swift; sourceTree = "<group>"; };
 		D59DC040293625B8009D935A /* World breads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "World breads.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59DC043293625B8009D935A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D59DC045293625B8009D935A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D59DC047293625B8009D935A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D59DC04A293625B8009D935A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D59DC04C293625BE009D935A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D59DC04F293625BE009D935A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D59DC051293625BE009D935A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D59DC0592936276E009D935A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D59DC06329363102009D935A /* breads.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = breads.json; path = ../../../../Downloads/breads.json; sourceTree = "<group>"; };
+		D59DC06529363183009D935A /* MyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
+		D59DC06729363EBF009D935A /* HomeViewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTableCell.swift; sourceTree = "<group>"; };
+		D59DC06B293649EC009D935A /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		D59DC06D29364A04009D935A /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		D59DC06F29364A1D009D935A /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		D59DC07129364A39009D935A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D59DC073293656D8009D935A /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		D5B1B13F293A397B00A20669 /* MainSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingsViewController.swift; sourceTree = "<group>"; };
+		D5B1B141293A4D5F00A20669 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		D5B1B143293B9BE300A20669 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
+		D5B1B144293B9BE300A20669 /* TestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVC.xib; sourceTree = "<group>"; };
+		D5D24A88293E280400AFEC5C /* MainSettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingsTableViewCell.swift; sourceTree = "<group>"; };
+		D5D24A8B293EA40600AFEC5C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		D5D24AAB2940169F00AFEC5C /* CardCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionCell.swift; sourceTree = "<group>"; };
+		D5D24AAD2940B3F900AFEC5C /* InfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoModel.swift; sourceTree = "<group>"; };
+		D5D24AAF2940B60F00AFEC5C /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		D5D24AB22940C04A00AFEC5C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D5D24AB42940C90E00AFEC5C /* BaseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModels.swift; sourceTree = "<group>"; };
+		D5D24AB62940E50800AFEC5C /* FoldCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldCardsView.swift; sourceTree = "<group>"; };
+		D5D24AB92940EAE700AFEC5C /* OneItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneItemViewController.swift; sourceTree = "<group>"; };
+		D5D24ABB2940EC8400AFEC5C /* OneItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneItemView.swift; sourceTree = "<group>"; };
+		D5D24ABD2940ECA700AFEC5C /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
+		D5D24ABF2940EE2200AFEC5C /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF40F8BC993BD3A2027843BF /* Pods_World_breads.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +99,8 @@
 			children = (
 				D59DC042293625B8009D935A /* World breads */,
 				D59DC041293625B8009D935A /* Products */,
+				FCE04EE801D95637C071FF21 /* Pods */,
+				F98453D5C60612C2FE0E9456 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +115,154 @@
 		D59DC042293625B8009D935A /* World breads */ = {
 			isa = PBXGroup;
 			children = (
+				D59DC062293630D3009D935A /* JSON_FIles */,
+				D59DC061293630C0009D935A /* Model */,
+				D59DC0572936271E009D935A /* Controllers */,
+				D5D24AB12940BF6600AFEC5C /* Base */,
 				D59DC043293625B8009D935A /* AppDelegate.swift */,
-				D59DC045293625B8009D935A /* SceneDelegate.swift */,
-				D59DC047293625B8009D935A /* ViewController.swift */,
-				D59DC049293625B8009D935A /* Main.storyboard */,
 				D59DC04C293625BE009D935A /* Assets.xcassets */,
 				D59DC04E293625BE009D935A /* LaunchScreen.storyboard */,
 				D59DC051293625BE009D935A /* Info.plist */,
 			);
 			path = "World breads";
+			sourceTree = "<group>";
+		};
+		D59DC0572936271E009D935A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5D24A8A293EA3D900AFEC5C /* Welcome Page */,
+				D5B1B13E293A318300A20669 /* TabBar */,
+				D5B1B139293A30D400A20669 /* Home */,
+				D5D24AB82940EA8700AFEC5C /* OneItem */,
+				D5B1B14C293D029300A20669 /* Card */,
+				D5B1B13B293A311C00A20669 /* Quiz */,
+				D5B1B14B293D027B00A20669 /* Info */,
+				D5B1B13D293A313300A20669 /* Settings */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D59DC061293630C0009D935A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D59DC06529363183009D935A /* MyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D59DC062293630D3009D935A /* JSON_FIles */ = {
+			isa = PBXGroup;
+			children = (
+				D59DC06329363102009D935A /* breads.json */,
+			);
+			path = JSON_FIles;
+			sourceTree = "<group>";
+		};
+		D5B1B139293A30D400A20669 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D59DC0592936276E009D935A /* HomeViewController.swift */,
+				D59DC06729363EBF009D935A /* HomeViewTableCell.swift */,
+				D5B1B143293B9BE300A20669 /* TestVC.swift */,
+				D5B1B144293B9BE300A20669 /* TestVC.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D5B1B13B293A311C00A20669 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				D59DC06D29364A04009D935A /* QuizViewController.swift */,
+				D59996D02944C7180025F7F8 /* QuizView.swift */,
+				D59996D22944C72F0025F7F8 /* VariantButton .swift */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		D5B1B13D293A313300A20669 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D59DC07129364A39009D935A /* SettingsViewController.swift */,
+				D59DC073293656D8009D935A /* SettingsTableViewCell.swift */,
+				D5B1B13F293A397B00A20669 /* MainSettingsViewController.swift */,
+				D5D24A88293E280400AFEC5C /* MainSettingsTableViewCell.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D5B1B13E293A318300A20669 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D5B1B141293A4D5F00A20669 /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		D5B1B14B293D027B00A20669 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				D59DC06B293649EC009D935A /* InfoViewController.swift */,
+				D5D24AAD2940B3F900AFEC5C /* InfoModel.swift */,
+				D5D24AAF2940B60F00AFEC5C /* InfoTableViewCell.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		D5B1B14C293D029300A20669 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				D59DC06F29364A1D009D935A /* CardViewController.swift */,
+				D5D24AAB2940169F00AFEC5C /* CardCollectionCell.swift */,
+				D5D24AB62940E50800AFEC5C /* FoldCardsView.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		D5D24A8A293EA3D900AFEC5C /* Welcome Page */ = {
+			isa = PBXGroup;
+			children = (
+				D5D24A8B293EA40600AFEC5C /* WelcomeViewController.swift */,
+			);
+			path = "Welcome Page";
+			sourceTree = "<group>";
+		};
+		D5D24AB12940BF6600AFEC5C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D5D24AB22940C04A00AFEC5C /* BaseViewController.swift */,
+				D5D24AB42940C90E00AFEC5C /* BaseModels.swift */,
+				D5D24ABF2940EE2200AFEC5C /* BaseView.swift */,
+				D59996D42944C89E0025F7F8 /* BaseExtensions.swift */,
+				D59996D62944C95F0025F7F8 /* BaseCustomViews.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D5D24AB82940EA8700AFEC5C /* OneItem */ = {
+			isa = PBXGroup;
+			children = (
+				D5D24AB92940EAE700AFEC5C /* OneItemViewController.swift */,
+				D5D24ABB2940EC8400AFEC5C /* OneItemView.swift */,
+				D5D24ABD2940ECA700AFEC5C /* StarRatingView.swift */,
+			);
+			path = OneItem;
+			sourceTree = "<group>";
+		};
+		F98453D5C60612C2FE0E9456 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				856ADFBF3C31EE7A35D1BA2A /* Pods_World_breads.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCE04EE801D95637C071FF21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD38E7361EE77B897BB07375 /* Pods-World breads.debug.xcconfig */,
+				7EBE61281A451995872CD182 /* Pods-World breads.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D59DC054293625BE009D935A /* Build configuration list for PBXNativeTarget "World breads" */;
 			buildPhases = (
+				841504FD8AEB21F20C4F76E2 /* [CP] Check Pods Manifest.lock */,
 				D59DC03C293625B8009D935A /* Sources */,
 				D59DC03D293625B8009D935A /* Frameworks */,
 				D59DC03E293625B8009D935A /* Resources */,
+				1FCA434BA437A19CE43634A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +303,7 @@
 				};
 			};
 			buildConfigurationList = D59DC03B293625B8009D935A /* Build configuration list for PBXProject "World breads" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -125,36 +325,96 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5B1B146293B9BE300A20669 /* TestVC.xib in Resources */,
 				D59DC050293625BE009D935A /* LaunchScreen.storyboard in Resources */,
+				D59DC06429363102009D935A /* breads.json in Resources */,
 				D59DC04D293625BE009D935A /* Assets.xcassets in Resources */,
-				D59DC04B293625B8009D935A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FCA434BA437A19CE43634A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-World breads/Pods-World breads-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-World breads/Pods-World breads-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-World breads/Pods-World breads-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		841504FD8AEB21F20C4F76E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-World breads-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D59DC03C293625B8009D935A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D59DC048293625B8009D935A /* ViewController.swift in Sources */,
+				D5D24AB52940C90E00AFEC5C /* BaseModels.swift in Sources */,
 				D59DC044293625B8009D935A /* AppDelegate.swift in Sources */,
-				D59DC046293625B8009D935A /* SceneDelegate.swift in Sources */,
+				D59996D12944C7180025F7F8 /* QuizView.swift in Sources */,
+				D5D24ABC2940EC8400AFEC5C /* OneItemView.swift in Sources */,
+				D59996D72944C95F0025F7F8 /* BaseCustomViews.swift in Sources */,
+				D5D24A8C293EA40600AFEC5C /* WelcomeViewController.swift in Sources */,
+				D59DC06E29364A04009D935A /* QuizViewController.swift in Sources */,
+				D59996D32944C72F0025F7F8 /* VariantButton .swift in Sources */,
+				D5B1B142293A4D5F00A20669 /* TabBarController.swift in Sources */,
+				D5B1B140293A397B00A20669 /* MainSettingsViewController.swift in Sources */,
+				D5D24AB32940C04A00AFEC5C /* BaseViewController.swift in Sources */,
+				D5B1B145293B9BE300A20669 /* TestVC.swift in Sources */,
+				D59996D52944C89E0025F7F8 /* BaseExtensions.swift in Sources */,
+				D5D24AB02940B60F00AFEC5C /* InfoTableViewCell.swift in Sources */,
+				D59DC06629363183009D935A /* MyModel.swift in Sources */,
+				D5D24AAE2940B3F900AFEC5C /* InfoModel.swift in Sources */,
+				D59DC06C293649EC009D935A /* InfoViewController.swift in Sources */,
+				D59DC06829363EBF009D935A /* HomeViewTableCell.swift in Sources */,
+				D59DC05A2936276E009D935A /* HomeViewController.swift in Sources */,
+				D5D24AC02940EE2200AFEC5C /* BaseView.swift in Sources */,
+				D59DC07029364A1D009D935A /* CardViewController.swift in Sources */,
+				D5D24A89293E280400AFEC5C /* MainSettingsTableViewCell.swift in Sources */,
+				D59DC074293656D8009D935A /* SettingsTableViewCell.swift in Sources */,
+				D5D24AAC2940169F00AFEC5C /* CardCollectionCell.swift in Sources */,
+				D59DC07229364A39009D935A /* SettingsViewController.swift in Sources */,
+				D5D24ABA2940EAE700AFEC5C /* OneItemViewController.swift in Sources */,
+				D5D24ABE2940ECA700AFEC5C /* StarRatingView.swift in Sources */,
+				D5D24AB72940E50800AFEC5C /* FoldCardsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D59DC049293625B8009D935A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D59DC04A293625B8009D935A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D59DC04E293625BE009D935A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +542,7 @@
 		};
 		D59DC055293625BE009D935A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD38E7361EE77B897BB07375 /* Pods-World breads.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,9 +553,9 @@
 				INFOPLIST_FILE = "World breads/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +571,7 @@
 		};
 		D59DC056293625BE009D935A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EBE61281A451995872CD182 /* Pods-World breads.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,9 +582,9 @@
 				INFOPLIST_FILE = "World breads/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

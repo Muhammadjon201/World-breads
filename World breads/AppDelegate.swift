@@ -10,27 +10,51 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow()
+        setTabBar()
+        setNavBar()
+        let vc = WelcomeViewController()
+        let nc = UINavigationController(rootViewController: vc)
+        
+        window?.rootViewController = nc
+        window?.makeKeyAndVisible()
         return true
     }
+    
+    func setTabBar() {
+            let backColor = UIColor(red: 254/255, green: 205/255, blue: 65/255, alpha: 1)
+            let selColor =  UIColor(red: 180/255, green: 13/255, blue: 34/255, alpha: 1)
+            let normColor = UIColor(red: 79/255, green: 60/255, blue: 56/255, alpha: 1)
+            let appearance = UITabBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = backColor
+            appearance.shadowImage = nil
+            appearance.shadowColor = nil
+            appearance.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: selColor]
+            appearance.stackedLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: normColor]
+            appearance.stackedLayoutAppearance.normal.iconColor = normColor
+            appearance.stackedLayoutAppearance.selected.iconColor = selColor
+            UITabBar.appearance().standardAppearance = appearance
+            if #available(iOS 15.0, *) {
+                UITabBar.appearance().scrollEdgeAppearance = appearance
+            }
+        }
 
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
-
+    func setNavBar() {
+            let color = UIColor(red: 123/255, green: 155/255, blue: 15/255, alpha: 1)
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = color
+            UINavigationBar.appearance().standardAppearance = appearance
+            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        }
 
 }
+
+
+
 
