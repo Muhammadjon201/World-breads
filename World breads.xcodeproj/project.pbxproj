@@ -15,7 +15,6 @@
 		D59DC04D293625BE009D935A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D59DC04C293625BE009D935A /* Assets.xcassets */; };
 		D59DC050293625BE009D935A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59DC04E293625BE009D935A /* LaunchScreen.storyboard */; };
 		D59DC05A2936276E009D935A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC0592936276E009D935A /* HomeViewController.swift */; };
-		D59DC06429363102009D935A /* breads.json in Resources */ = {isa = PBXBuildFile; fileRef = D59DC06329363102009D935A /* breads.json */; };
 		D59DC06629363183009D935A /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC06529363183009D935A /* MyModel.swift */; };
 		D59DC06829363EBF009D935A /* HomeViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC06729363EBF009D935A /* HomeViewTableCell.swift */; };
 		D59DC06C293649EC009D935A /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC06B293649EC009D935A /* InfoViewController.swift */; };
@@ -23,6 +22,7 @@
 		D59DC07029364A1D009D935A /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC06F29364A1D009D935A /* CardViewController.swift */; };
 		D59DC07229364A39009D935A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC07129364A39009D935A /* SettingsViewController.swift */; };
 		D59DC074293656D8009D935A /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC073293656D8009D935A /* SettingsTableViewCell.swift */; };
+		D59FBCB6296A6E4300AEA8BD /* breads.json in Resources */ = {isa = PBXBuildFile; fileRef = D59FBCB5296A6E4300AEA8BD /* breads.json */; };
 		D5B1B140293A397B00A20669 /* MainSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1B13F293A397B00A20669 /* MainSettingsViewController.swift */; };
 		D5B1B142293A4D5F00A20669 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1B141293A4D5F00A20669 /* TabBarController.swift */; };
 		D5B1B145293B9BE300A20669 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1B143293B9BE300A20669 /* TestVC.swift */; };
@@ -56,7 +56,6 @@
 		D59DC04F293625BE009D935A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D59DC051293625BE009D935A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D59DC0592936276E009D935A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		D59DC06329363102009D935A /* breads.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = breads.json; path = ../../../../Downloads/breads.json; sourceTree = "<group>"; };
 		D59DC06529363183009D935A /* MyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
 		D59DC06729363EBF009D935A /* HomeViewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTableCell.swift; sourceTree = "<group>"; };
 		D59DC06B293649EC009D935A /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		D59DC06F29364A1D009D935A /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		D59DC07129364A39009D935A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D59DC073293656D8009D935A /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		D59FBCB5296A6E4300AEA8BD /* breads.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = breads.json; sourceTree = "<group>"; };
 		D5B1B13F293A397B00A20669 /* MainSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingsViewController.swift; sourceTree = "<group>"; };
 		D5B1B141293A4D5F00A20669 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		D5B1B143293B9BE300A20669 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 		D59DC062293630D3009D935A /* JSON_FIles */ = {
 			isa = PBXGroup;
 			children = (
-				D59DC06329363102009D935A /* breads.json */,
+				D59FBCB5296A6E4300AEA8BD /* breads.json */,
 			);
 			path = JSON_FIles;
 			sourceTree = "<group>";
@@ -325,9 +325,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D59FBCB6296A6E4300AEA8BD /* breads.json in Resources */,
 				D5B1B146293B9BE300A20669 /* TestVC.xib in Resources */,
 				D59DC050293625BE009D935A /* LaunchScreen.storyboard in Resources */,
-				D59DC06429363102009D935A /* breads.json in Resources */,
 				D59DC04D293625BE009D935A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
