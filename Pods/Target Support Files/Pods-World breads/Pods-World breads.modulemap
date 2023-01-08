@@ -1,0 +1,6 @@
+framework module Pods_World_breads {
+  umbrella header "Pods-World breads-umbrella.h"
+
+  export *
+  module * { export * }
+}
