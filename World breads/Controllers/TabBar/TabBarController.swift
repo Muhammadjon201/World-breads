@@ -48,20 +48,17 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        go()
-//        guard let items = self.tabBar.items else { return }
-//        items[0].badgeValue = "98"
+        navigationAdd()
+        guard let items = self.tabBar.items else { return }
+        items[0].badgeValue = "98"
         
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
-    
-//
-    
-    
-    func go() {
+
+    func navigationAdd() {
         var navArr = [UINavigationController]()
         for i in 0..<vcArr.count {
             vcArr[i].tabBarItem = tabItemsArr[i]

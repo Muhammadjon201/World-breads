@@ -21,7 +21,7 @@ class MainSettingsTableViewCell: UITableViewCell {
     lazy var bottomLabel: UILabel = {
         let bottomLabel = UILabel()
         bottomLabel.numberOfLines = 0
-        bottomLabel.font = BaseFonts.verdana_Bold(size: 17)//        BaseFonts.trebuchetMS(size: 18)
+        bottomLabel.font = BaseFonts.verdana_Bold(size: 17)
         bottomLabel.textColor = BaseColor.shareIconColor()
         return bottomLabel
     }()
@@ -36,7 +36,6 @@ class MainSettingsTableViewCell: UITableViewCell {
             make.left.equalTo(20)
             make.right.equalTo(-10)
             make.bottom.equalTo(-10)
-//            make.height.equalTo(700)
             
         }
     }

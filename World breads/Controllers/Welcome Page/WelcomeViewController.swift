@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class WelcomeViewController: UIViewController {
+final class WelcomeViewController: UIViewController {
     
     lazy var welcomeImg: UIImageView = {
         let welcomeImg = UIImageView()
@@ -58,7 +58,6 @@ class WelcomeViewController: UIViewController {
     }
     
     func setUp() {
-  
         view.backgroundColor = .white
         view.addSubview(welcomeImg)
         view.addSubview(wLabel)
@@ -87,7 +86,5 @@ class WelcomeViewController: UIViewController {
         let vc = TabBarController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-
-
 }
+

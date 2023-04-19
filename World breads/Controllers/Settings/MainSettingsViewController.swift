@@ -80,16 +80,10 @@ class MainSettingsViewController: UIViewController {
         vc.popoverPresentationController?.sourceView = self.view
         self.present(vc, animated: true, completion: nil)
         
-//        let items:[Any] = ["https://apple.com"]
-//
-//        let activityVC = UIActivityViewController(activityItems: items, applicationActivities: nil)
-//        activityVC.popoverPresentationController?.sourceView = self.view
-//
-//        self.present(activityVC, animated: true, completion: nil)
     }
     
     @objc func searchTapped() {
-        let vc = SettingsViewController()
+        let vc = SearchViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

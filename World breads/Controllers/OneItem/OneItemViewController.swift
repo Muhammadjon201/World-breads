@@ -46,17 +46,10 @@ extension OneItemViewController {
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
         }
     }
-//    func setNavItems(){
-//        setNav(NavItemProperty(title: "Main Settings", tintColor: .white,
-//                               font: BaseFonts.thonburi_Bold(size: 24),
-//                               leftImg: "left", rightImg: "",
-//                               leftFunc: { self.navigationController?.popViewController(animated: true) }, rightFunc: { }))
-//    }
     func createSubViews(){
         initSubViews()
         addedSubViews()
         setConstraints()
-//        setNavItems()
     }
 }
 // MARK:  - Functions

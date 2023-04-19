@@ -133,7 +133,7 @@ class QuizView: BaseView {
             variantC.variantButton.tag = 102
             variantD.variantButton.tag = 103
         }
-        print("==//==//==//====//====//====//====//==\n",quiz.object?.name ?? "")
+        //print("==//==//==//====//====//====//====//==\n",quiz.object?.name ?? "")
     }
     
     func attStr(_ str: String) -> NSAttributedString {

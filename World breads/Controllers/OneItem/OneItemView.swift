@@ -192,7 +192,7 @@ class OneItemView: BaseView {
             make.top.equalTo(flagIcon.snp.bottom).offset(10)
             make.left.equalTo(0)
             make.right.equalTo(-0)
-            make.height.equalTo(350)
+            make.height.equalTo(250)
         }
         starLabel.snp.makeConstraints { make in
             make.top.equalTo(img.snp.bottom).offset(20)

@@ -64,7 +64,7 @@ extension BaseViewController {
     func setNav(_ navItem: NavItemProperty  ) {
         baseNavItem = navItem
         let titleLabel = UILabel()
-        let atributedTitle = NSAttributedString(string: navItem.title ?? "",attributes: [.foregroundColor: navItem.tintColor ?? .white, .font: navItem.font])
+        let atributedTitle = NSAttributedString(string: navItem.title ?? "",attributes: [.foregroundColor: navItem.tintColor ?? .white, .font: navItem.font ?? ""])
         titleLabel.attributedText = atributedTitle
         self.navigationItem.titleView = titleLabel
         

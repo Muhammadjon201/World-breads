@@ -25,8 +25,6 @@
 		D59FBCB6296A6E4300AEA8BD /* breads.json in Resources */ = {isa = PBXBuildFile; fileRef = D59FBCB5296A6E4300AEA8BD /* breads.json */; };
 		D5B1B140293A397B00A20669 /* MainSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1B13F293A397B00A20669 /* MainSettingsViewController.swift */; };
 		D5B1B142293A4D5F00A20669 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1B141293A4D5F00A20669 /* TabBarController.swift */; };
-		D5B1B145293B9BE300A20669 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1B143293B9BE300A20669 /* TestVC.swift */; };
-		D5B1B146293B9BE300A20669 /* TestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5B1B144293B9BE300A20669 /* TestVC.xib */; };
 		D5D24A89293E280400AFEC5C /* MainSettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D24A88293E280400AFEC5C /* MainSettingsTableViewCell.swift */; };
 		D5D24A8C293EA40600AFEC5C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D24A8B293EA40600AFEC5C /* WelcomeViewController.swift */; };
 		D5D24AAC2940169F00AFEC5C /* CardCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D24AAB2940169F00AFEC5C /* CardCollectionCell.swift */; };
@@ -66,8 +64,6 @@
 		D59FBCB5296A6E4300AEA8BD /* breads.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = breads.json; sourceTree = "<group>"; };
 		D5B1B13F293A397B00A20669 /* MainSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingsViewController.swift; sourceTree = "<group>"; };
 		D5B1B141293A4D5F00A20669 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		D5B1B143293B9BE300A20669 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
-		D5B1B144293B9BE300A20669 /* TestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVC.xib; sourceTree = "<group>"; };
 		D5D24A88293E280400AFEC5C /* MainSettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingsTableViewCell.swift; sourceTree = "<group>"; };
 		D5D24A8B293EA40600AFEC5C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		D5D24AAB2940169F00AFEC5C /* CardCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionCell.swift; sourceTree = "<group>"; };
@@ -163,8 +159,6 @@
 			children = (
 				D59DC0592936276E009D935A /* HomeViewController.swift */,
 				D59DC06729363EBF009D935A /* HomeViewTableCell.swift */,
-				D5B1B143293B9BE300A20669 /* TestVC.swift */,
-				D5B1B144293B9BE300A20669 /* TestVC.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -326,7 +320,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D59FBCB6296A6E4300AEA8BD /* breads.json in Resources */,
-				D5B1B146293B9BE300A20669 /* TestVC.xib in Resources */,
 				D59DC050293625BE009D935A /* LaunchScreen.storyboard in Resources */,
 				D59DC04D293625BE009D935A /* Assets.xcassets in Resources */,
 			);
@@ -392,7 +385,6 @@
 				D5B1B142293A4D5F00A20669 /* TabBarController.swift in Sources */,
 				D5B1B140293A397B00A20669 /* MainSettingsViewController.swift in Sources */,
 				D5D24AB32940C04A00AFEC5C /* BaseViewController.swift in Sources */,
-				D5B1B145293B9BE300A20669 /* TestVC.swift in Sources */,
 				D59996D52944C89E0025F7F8 /* BaseExtensions.swift in Sources */,
 				D5D24AB02940B60F00AFEC5C /* InfoTableViewCell.swift in Sources */,
 				D59DC06629363183009D935A /* MyModel.swift in Sources */,
