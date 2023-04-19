@@ -15,8 +15,6 @@ class SearchViewController: UIViewController {
     
     lazy var allArr = model.breadArr
     
-    
-    
     let tableView = UITableView()
     let searchBar = UISearchBar()
     var isSearching = false
@@ -25,11 +23,11 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         createSubViews()
+        navigationController?.navigationBar.tintColor = UIColor.black
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        navigationController?.setNavigationBarHidden(true, animated: true)
     }
 }
 
@@ -38,13 +36,11 @@ extension SearchViewController {
     func initSubViews(){
         view.backgroundColor = .white
         
-        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
         tableView.backgroundColor = .clear
         tableView.register(SettingsTableViewCell.self, forCellReuseIdentifier: "SettingsTableViewCell")
-        
         
     }
     func addedSubViews(){
@@ -61,7 +57,6 @@ extension SearchViewController {
         initSubViews()
         addedSubViews()
         setConstraints()
-//        setNavItems()
         configureSearchBar()
     }
 }
@@ -106,13 +101,6 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
 // MARK:  -UISearchBarDelegate Metods
 
 extension SearchViewController: UISearchBarDelegate {
-    
-//    func setNavItems(){
-//        setNav(NavItemProperty(title: "Search", tintColor: .white,
-//                               font: BaseFonts.thonburi_Bold(size: 24),
-//                               leftImg: "", rightImg: "",
-//                               leftFunc: { }, rightFunc: { }))
-//    }
     func configureSearchBar() {
         searchBar.sizeToFit()
         searchBar.endEditing(true)
@@ -166,5 +154,4 @@ extension SearchViewController: UISearchBarDelegate {
         }
         tableView.reloadData()
     }
-    
 }

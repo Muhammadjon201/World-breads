@@ -11,7 +11,6 @@ import SDWebImage
 
 class CardViewController: UIViewController {
     
-    //var arr = [Info]()
     lazy var wd = UIScreen.main.bounds.width
     var leftPd: CGFloat = 20
     var interItemPd: CGFloat = 20
@@ -44,6 +43,8 @@ class CardViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
+        navigationController?.navigationBar.tintColor = UIColor.black
+
         setConstraints()
         setNavigationBar()
     }
@@ -64,10 +65,9 @@ class CardViewController: UIViewController {
     
     func setNavigationBar() {
         let myTitleLabel = UILabel()
-        let attributedStr = NSAttributedString(string: "All Breads in Fold Card", attributes: [.font: BaseFonts.thonburi_Bold(size: 22), .foregroundColor: UIColor.white])
+        let attributedStr = NSAttributedString(string: "All Breads in Fold Card", attributes: [.font: BaseFonts.thonburi_Bold(size: 18), .foregroundColor: UIColor.black])
         myTitleLabel.attributedText = attributedStr
         navigationItem.titleView = myTitleLabel
-        
     }
 
  }
@@ -106,7 +106,5 @@ extension CardViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
         }
         return CGSize(width: wd-2*leftPd, height: (wd-3*leftPd)/2)
     }
-    
-    
 }
     

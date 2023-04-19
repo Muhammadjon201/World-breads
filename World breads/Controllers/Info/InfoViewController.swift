@@ -61,19 +61,16 @@ class InfoViewController: BaseViewController {
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
             make.left.right.bottom.equalToSuperview()
         }
-        
     }
     
     // Navigation bar
     
     func setNavigationBar() {
         let myTitleLabel = UILabel()
-        let attributedStr = NSAttributedString(string: "About Breads", attributes: [.font: BaseFonts.thonburi_Bold(size: 22), .foregroundColor: UIColor.white])
+        let attributedStr = NSAttributedString(string: "About Breads", attributes: [.font: BaseFonts.thonburi_Bold(size: 18), .foregroundColor: UIColor.black])
         myTitleLabel.attributedText = attributedStr
         navigationItem.titleView = myTitleLabel
-        
     }
-  
 }
 
 extension InfoViewController: UITableViewDelegate, UITableViewDataSource {
@@ -85,7 +82,7 @@ extension InfoViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         lazy var titleLabel: UILabel = {
             let view = UILabel()
-            view.backgroundColor = .systemYellow//UIColor(red: 123/255, green: 22/255, blue: 15/255, alpha: 1) // UIColor(patternImage: UIImage(named: "gr15") ?? UIImage())
+            view.backgroundColor = .systemYellow
             view.font = BaseFonts.chalkboardSE_Bold(size: 28)
             view.textColor = .black
             view.textAlignment = .left
@@ -109,5 +106,4 @@ extension InfoViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
-
 }

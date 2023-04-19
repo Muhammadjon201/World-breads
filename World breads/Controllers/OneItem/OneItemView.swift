@@ -28,21 +28,21 @@ class OneItemView: BaseView {
     }()
     lazy var verticalyView: UIView = {
         let view = UIView()
-        view.backgroundColor = .gray
+        view.backgroundColor = .black
         return view
     }()
     lazy var typeLabel: UILabel = {
         let view = UILabel()
         view.font = BaseFonts.extraLight(size: 14)
-        view.textColor = .gray
+        view.textColor = .black
         view.textAlignment = .center
         view.numberOfLines = 1
         return view
     }()
     lazy var nameLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.bold(size: 26)
-        view.textColor = .gray
+        view.font = BaseFonts.bold(size: 18)
+        view.textColor = .black
         view.textAlignment = .center
         view.numberOfLines = 1
         return view
@@ -59,7 +59,7 @@ class OneItemView: BaseView {
     lazy var locationLabel: UILabel = {
         let view = UILabel()
         view.font = BaseFonts.light(size: 16)
-        view.textColor = .gray
+        view.textColor = .black
         view.textAlignment = .center
         view.numberOfLines = 1
         return view
@@ -67,7 +67,7 @@ class OneItemView: BaseView {
     lazy var ratingLabel: UILabel = {
         let view = UILabel()
         view.font = BaseFonts.light(size: 16)
-        view.textColor = .gray
+        view.textColor = .black
         view.textAlignment = .center
         view.numberOfLines = 1
         return view
@@ -109,7 +109,7 @@ class OneItemView: BaseView {
     lazy var starLabel: UILabel = {
         let view = UILabel()
         view.font = BaseFonts.light(size: 26)
-        view.textColor = .gray
+        view.textColor = .black
         view.textAlignment = .center
         view.numberOfLines = 1
         return view
@@ -117,9 +117,8 @@ class OneItemView: BaseView {
     lazy var descLabel: UITextView = {
         let view = UITextView()
         view.font = BaseFonts.light(size: 16)
-        view.textColor = .gray
+        view.textColor = .black
         view.textAlignment = .center
-//        view.numberOfLines = 0
         return view
     }()
     
@@ -148,7 +147,6 @@ class OneItemView: BaseView {
     override func setConstraints() {
         rankValueLabel.snp.makeConstraints { make in
             make.top.equalTo(verticalyView.snp.top)
-           // make.centerY.equalTo(verticalyView.snp.centerY)
             make.left.equalTo(10)
         }
         rankLabel.snp.makeConstraints { make in
@@ -222,6 +220,5 @@ class OneItemView: BaseView {
         starView.r = Double(obj.rating ?? "") ?? 0
         descLabel.text = obj.desc ?? ""
     }
-    
 }
 

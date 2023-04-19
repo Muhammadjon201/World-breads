@@ -11,10 +11,6 @@ import SDWebImage
 
 class SettingsTableViewCell: UITableViewCell {
     
-//    let model = MyLocalData()
-//    lazy var settingsArr = model.breadArr
-//    //var a: [Bread]
-    
     let containerView = UIView()
     let stacView = UIStackView()
     let contentImage = UIImageView()
@@ -47,11 +43,11 @@ class SettingsTableViewCell: UITableViewCell {
         contentImage.layer.cornerRadius = 10
         
         nameLabel.numberOfLines = 1
-        nameLabel.font = BaseFonts.snellRoundhand_Bold(size: 17)
+        nameLabel.font = BaseFonts.light(size: 18)
         nameLabel.textAlignment = .left
         
         typeLabel.numberOfLines = 1
-        typeLabel.font = BaseFonts.alNile_Bold(size: 15)
+        typeLabel.font = BaseFonts.light(size: 18)
         typeLabel.textAlignment = .left
         
         mapImage.clipsToBounds = true

@@ -26,12 +26,11 @@ var window: UIWindow?
     }
     
     func setTabBar() {
-            let backColor = UIColor(red: 254/255, green: 205/255, blue: 65/255, alpha: 1)
             let selColor =  UIColor(red: 180/255, green: 13/255, blue: 34/255, alpha: 1)
             let normColor = UIColor(red: 79/255, green: 60/255, blue: 56/255, alpha: 1)
             let appearance = UITabBarAppearance()
             appearance.configureWithOpaqueBackground()
-            appearance.backgroundColor = backColor
+            appearance.backgroundColor = .white
             appearance.shadowImage = nil
             appearance.shadowColor = nil
             appearance.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: selColor]
@@ -45,10 +44,9 @@ var window: UIWindow?
         }
 
     func setNavBar() {
-            let color = UIColor(red: 123/255, green: 155/255, blue: 15/255, alpha: 1)
             let appearance = UINavigationBarAppearance()
             appearance.configureWithOpaqueBackground()
-            appearance.backgroundColor = color
+            appearance.backgroundColor = .white
             UINavigationBar.appearance().standardAppearance = appearance
             UINavigationBar.appearance().scrollEdgeAppearance = appearance
         }

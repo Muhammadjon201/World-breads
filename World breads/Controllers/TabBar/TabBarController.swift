@@ -47,11 +47,7 @@ class TabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         navigationAdd()
-        guard let items = self.tabBar.items else { return }
-        items[0].badgeValue = "98"
-        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

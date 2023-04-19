@@ -47,5 +47,4 @@ class MainSettingsTableViewCell: UITableViewCell {
     func updateCell(info: MyData) {
         bottomLabel.text = info.name
     }
-
 }

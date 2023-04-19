@@ -12,7 +12,6 @@ class MainSettingsViewController: UIViewController {
     
     // TableView stuff..
     var bottomArr = [MyData]()
-
         
     lazy var bottomTableV: UITableView = {
         let bottomTableV = UITableView()
@@ -112,7 +111,7 @@ class MainSettingsViewController: UIViewController {
     
     func setNavigationBar() {
         let myTitleLabel = UILabel()
-        let attributedStr = NSAttributedString(string: "Main Settings", attributes: [.font: BaseFonts.thonburi_Bold(size: 22), .foregroundColor: UIColor.white])
+        let attributedStr = NSAttributedString(string: "Main Settings", attributes: [.font: BaseFonts.thonburi_Bold(size: 18), .foregroundColor: UIColor.black])
         myTitleLabel.attributedText = attributedStr
         navigationItem.titleView = myTitleLabel
         

@@ -20,7 +20,6 @@ class OneItemViewController: BaseViewController {
     
     init() {
         super.init(nibName: nil, bundle: nil)
-//        setTabItem(title: "Settings", img: "settings1", sImg: "settings")
     }
     
     required init?(coder: NSCoder) {

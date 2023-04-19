@@ -21,6 +21,7 @@ class HomeViewController: UIViewController {
         view.backgroundColor = .white
         setNavigationBar()
         setConstaints()
+        navigationController?.navigationBar.tintColor = UIColor.black
     }
     
     func setConstaints() {
@@ -39,7 +40,7 @@ class HomeViewController: UIViewController {
     
     func setNavigationBar() {
         let myTitleLabel = UILabel()
-        let attributedStr = NSAttributedString(string: "Top Breads WorldWide", attributes: [.font: BaseFonts.thonburi_Bold(size: 22), .foregroundColor: UIColor.white])
+        let attributedStr = NSAttributedString(string: "Top Breads WorldWide", attributes: [.font: BaseFonts.thonburi_Bold(size: 18), .foregroundColor: UIColor.black])
         myTitleLabel.attributedText = attributedStr
         navigationItem.titleView = myTitleLabel
         
@@ -66,7 +67,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         vc.object = breadsArr[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
     }
-  
+    
 }
 
 

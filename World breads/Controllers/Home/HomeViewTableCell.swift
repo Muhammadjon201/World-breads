@@ -29,21 +29,21 @@ class HomeTableViewCell: BaseTableViewCell {
     }()
     lazy var verticalyView: UIView = {
         let view = UIView()
-        view.backgroundColor = .gray
+        view.backgroundColor = .black
         return view
     }()
     lazy var typeLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.snellRoundhand_Bold(size: 20)
-        view.textColor = .gray
+        view.font = BaseFonts.light(size: 18)
+        view.textColor = .black
         view.textAlignment = .center
         view.numberOfLines = 1
         return view
     }()
     lazy var nameLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.bold(size: 26)
-        view.textColor = .gray
+        view.font = BaseFonts.light(size: 18)
+        view.textColor = .black
         view.textAlignment = .center
         view.numberOfLines = 1
         return view
@@ -59,16 +59,16 @@ class HomeTableViewCell: BaseTableViewCell {
     }()
     lazy var locationLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.light(size: 16)
-        view.textColor = .gray
+        view.font = BaseFonts.light(size: 18)
+        view.textColor = .black
         view.textAlignment = .center
         view.numberOfLines = 1
         return view
     }()
     lazy var ratingLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.light(size: 16)
-        view.textColor = .gray
+        view.font = BaseFonts.light(size: 18)
+        view.textColor = .black
         view.textAlignment = .center
         view.numberOfLines = 1
         return view
@@ -103,7 +103,7 @@ class HomeTableViewCell: BaseTableViewCell {
     lazy var descLabel: UILabel = {
         let view = UILabel()
         view.font = BaseFonts.light(size: 16)
-        view.textColor = .gray
+        view.textColor = .black
         view.textAlignment = .center
         view.numberOfLines = 3
         return view
@@ -138,7 +138,6 @@ class HomeTableViewCell: BaseTableViewCell {
             make.width.equalTo(2)
         }
         rankValueLabel.snp.makeConstraints { make in
-            //make.centerY.equalTo(verticalyView.snp.centerY)
             make.top.equalTo(verticalyView.snp.top)
             make.left.equalTo(10)
         }
@@ -146,7 +145,6 @@ class HomeTableViewCell: BaseTableViewCell {
             make.bottom.equalTo(verticalyView.snp.bottom)
             make.centerX.equalTo(rankValueLabel.snp.centerX)
             make.left.greaterThanOrEqualTo(10)
-//            make.left.equalTo(10)
         }
         typeLabel.snp.makeConstraints { make in
             make.top.equalTo(30)
@@ -205,7 +203,6 @@ class BaseTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.backgroundColor = .clear
-        // BaseColot.quitColor()
         backgroundColor = .clear
         createSubViews()
        

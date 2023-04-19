@@ -15,7 +15,6 @@ class QuizViewController: BaseViewController {
         let view = UIImageView()
         view.clipsToBounds = true
         view.contentMode = .scaleAspectFill
-//        view.image = UIImage(named: "bg2")
         view.backgroundColor = .lightGray
         return view
     }()
@@ -107,8 +106,8 @@ extension QuizViewController {
     }
     func setNavItems(){
         setNav(NavItemProperty(title: "Fun Quiz",
-                               tintColor: .white,
-                               font: BaseFonts.thonburi_Bold(size: 24),
+                               tintColor: .black,
+                               font: BaseFonts.thonburi_Bold(size: 18),
                                leftImg: "left",
                                rightImg: "star",
                                leftFunc: {

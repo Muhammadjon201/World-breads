@@ -10,7 +10,6 @@ import UIKit
 class InfoModel {
     
     init() {
-        
     }
     
     func getInfo() -> [Info] {
