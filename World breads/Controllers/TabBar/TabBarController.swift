@@ -24,7 +24,6 @@ class TabBarController: UITabBarController {
     lazy var tabArr = [
         TabModel(name: "Home", icon: "home", selIcon: "home"),
         TabModel(name: "Card", icon: "credit-card", selIcon: "credit-card"),
-        TabModel(name: "Quiz", icon: "quiz", selIcon: "quiz"),
         TabModel(name: "Info", icon: "info", selIcon: "info"),
         TabModel(name: "Settings", icon: "settings", selIcon: "settings"),
     ]
@@ -32,7 +31,6 @@ class TabBarController: UITabBarController {
     lazy var vcArr = [
         HomeViewController(),
         CardViewController(),
-        QuizViewController(),
         InfoViewController(),
         MainSettingsViewController(),
     ]
@@ -41,8 +39,7 @@ class TabBarController: UITabBarController {
         makeTabItem(tabArr[0]),
         makeTabItem(tabArr[1]),
         makeTabItem(tabArr[2]),
-        makeTabItem(tabArr[3]),
-        makeTabItem(tabArr[4]),
+        makeTabItem(tabArr[2])
     ]
     
     override func viewDidLoad() {

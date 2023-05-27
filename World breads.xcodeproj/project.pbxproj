@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D59996D12944C7180025F7F8 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59996D02944C7180025F7F8 /* QuizView.swift */; };
-		D59996D32944C72F0025F7F8 /* VariantButton .swift in Sources */ = {isa = PBXBuildFile; fileRef = D59996D22944C72F0025F7F8 /* VariantButton .swift */; };
+		D597E9C62A22BC1700112003 /* RateAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D597E9C52A22BC1700112003 /* RateAppViewController.swift */; };
 		D59996D52944C89E0025F7F8 /* BaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59996D42944C89E0025F7F8 /* BaseExtensions.swift */; };
 		D59996D72944C95F0025F7F8 /* BaseCustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59996D62944C95F0025F7F8 /* BaseCustomViews.swift */; };
 		D59DC044293625B8009D935A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC043293625B8009D935A /* AppDelegate.swift */; };
@@ -18,7 +17,6 @@
 		D59DC06629363183009D935A /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC06529363183009D935A /* MyModel.swift */; };
 		D59DC06829363EBF009D935A /* HomeViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC06729363EBF009D935A /* HomeViewTableCell.swift */; };
 		D59DC06C293649EC009D935A /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC06B293649EC009D935A /* InfoViewController.swift */; };
-		D59DC06E29364A04009D935A /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC06D29364A04009D935A /* QuizViewController.swift */; };
 		D59DC07029364A1D009D935A /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC06F29364A1D009D935A /* CardViewController.swift */; };
 		D59DC07229364A39009D935A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC07129364A39009D935A /* SettingsViewController.swift */; };
 		D59DC074293656D8009D935A /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59DC073293656D8009D935A /* SettingsTableViewCell.swift */; };
@@ -44,8 +42,7 @@
 		7EBE61281A451995872CD182 /* Pods-World breads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-World breads.release.xcconfig"; path = "Target Support Files/Pods-World breads/Pods-World breads.release.xcconfig"; sourceTree = "<group>"; };
 		856ADFBF3C31EE7A35D1BA2A /* Pods_World_breads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_World_breads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD38E7361EE77B897BB07375 /* Pods-World breads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-World breads.debug.xcconfig"; path = "Target Support Files/Pods-World breads/Pods-World breads.debug.xcconfig"; sourceTree = "<group>"; };
-		D59996D02944C7180025F7F8 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
-		D59996D22944C72F0025F7F8 /* VariantButton .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VariantButton .swift"; sourceTree = "<group>"; };
+		D597E9C52A22BC1700112003 /* RateAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateAppViewController.swift; sourceTree = "<group>"; };
 		D59996D42944C89E0025F7F8 /* BaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseExtensions.swift; sourceTree = "<group>"; };
 		D59996D62944C95F0025F7F8 /* BaseCustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCustomViews.swift; sourceTree = "<group>"; };
 		D59DC040293625B8009D935A /* World breads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "World breads.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +54,6 @@
 		D59DC06529363183009D935A /* MyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
 		D59DC06729363EBF009D935A /* HomeViewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTableCell.swift; sourceTree = "<group>"; };
 		D59DC06B293649EC009D935A /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		D59DC06D29364A04009D935A /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		D59DC06F29364A1D009D935A /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		D59DC07129364A39009D935A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D59DC073293656D8009D935A /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
@@ -131,7 +127,6 @@
 				D5B1B139293A30D400A20669 /* Home */,
 				D5D24AB82940EA8700AFEC5C /* OneItem */,
 				D5B1B14C293D029300A20669 /* Card */,
-				D5B1B13B293A311C00A20669 /* Quiz */,
 				D5B1B14B293D027B00A20669 /* Info */,
 				D5B1B13D293A313300A20669 /* Settings */,
 			);
@@ -163,16 +158,6 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		D5B1B13B293A311C00A20669 /* Quiz */ = {
-			isa = PBXGroup;
-			children = (
-				D59DC06D29364A04009D935A /* QuizViewController.swift */,
-				D59996D02944C7180025F7F8 /* QuizView.swift */,
-				D59996D22944C72F0025F7F8 /* VariantButton .swift */,
-			);
-			path = Quiz;
-			sourceTree = "<group>";
-		};
 		D5B1B13D293A313300A20669 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +165,7 @@
 				D59DC073293656D8009D935A /* SettingsTableViewCell.swift */,
 				D5B1B13F293A397B00A20669 /* MainSettingsViewController.swift */,
 				D5D24A88293E280400AFEC5C /* MainSettingsTableViewCell.swift */,
+				D597E9C52A22BC1700112003 /* RateAppViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -376,12 +362,9 @@
 			files = (
 				D5D24AB52940C90E00AFEC5C /* BaseModels.swift in Sources */,
 				D59DC044293625B8009D935A /* AppDelegate.swift in Sources */,
-				D59996D12944C7180025F7F8 /* QuizView.swift in Sources */,
 				D5D24ABC2940EC8400AFEC5C /* OneItemView.swift in Sources */,
 				D59996D72944C95F0025F7F8 /* BaseCustomViews.swift in Sources */,
 				D5D24A8C293EA40600AFEC5C /* WelcomeViewController.swift in Sources */,
-				D59DC06E29364A04009D935A /* QuizViewController.swift in Sources */,
-				D59996D32944C72F0025F7F8 /* VariantButton .swift in Sources */,
 				D5B1B142293A4D5F00A20669 /* TabBarController.swift in Sources */,
 				D5B1B140293A397B00A20669 /* MainSettingsViewController.swift in Sources */,
 				D5D24AB32940C04A00AFEC5C /* BaseViewController.swift in Sources */,
@@ -398,6 +381,7 @@
 				D59DC074293656D8009D935A /* SettingsTableViewCell.swift in Sources */,
 				D5D24AAC2940169F00AFEC5C /* CardCollectionCell.swift in Sources */,
 				D59DC07229364A39009D935A /* SettingsViewController.swift in Sources */,
+				D597E9C62A22BC1700112003 /* RateAppViewController.swift in Sources */,
 				D5D24ABA2940EAE700AFEC5C /* OneItemViewController.swift in Sources */,
 				D5D24ABE2940ECA700AFEC5C /* StarRatingView.swift in Sources */,
 				D5D24AB72940E50800AFEC5C /* FoldCardsView.swift in Sources */,

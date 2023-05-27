@@ -15,7 +15,7 @@ class InfoViewController: BaseViewController {
         let view = UIImageView()
         view.clipsToBounds = true
         view.contentMode = .scaleAspectFill
-        view.backgroundColor = UIColor(red: 123/255, green: 155/255, blue: 15/255, alpha: 1)
+        view.backgroundColor = UIColor(red: 180/255, green: 13/255, blue: 34/255, alpha: 1)
         return view
     }()
     

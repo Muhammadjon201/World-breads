@@ -87,7 +87,12 @@ class MainSettingsViewController: UIViewController {
     }
     
     @objc func rateTapped() {
-        print("rT")
+        let vc = RateAppViewController()
+        
+        let savedRating = UserDefaults.standard.integer(forKey: "AppRating")
+        vc.selectedRating = savedRating
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func quitTapped() {
