@@ -22,7 +22,8 @@ class MainSettingsViewController: UIViewController {
         let hStack1 = UIStackView()
         hStack1.axis = .horizontal
         hStack1.distribution = .fillEqually
-        hStack1.alignment = .fill
+        hStack1.spacing = 10
+        hStack1.alignment = .center
         return hStack1
     }()
     
@@ -30,9 +31,11 @@ class MainSettingsViewController: UIViewController {
         let hStack2 = UIStackView()
         hStack2.axis = .horizontal
         hStack2.distribution = .fillEqually
-        hStack2.alignment = .fill
+        hStack2.spacing = 10
+        hStack2.alignment = .center
         return hStack2
     }()
+    
     
     lazy var vStack: UIStackView = {
         let vStack = UIStackView()
@@ -63,7 +66,7 @@ class MainSettingsViewController: UIViewController {
         return rateView
     }()
     
-    lazy var quitApp: CustomView = {
+    lazy var quitAppView: CustomView = {
         let quitApp = CustomView()
         quitApp.makeDesignContent(color: BaseColor.quitIconColor(), iconName: "log-out", text: "Quit App")
         quitApp.descLabel.text = "Quit App"
@@ -137,41 +140,53 @@ class MainSettingsViewController: UIViewController {
     
     func addedSubviews(){
         view.addSubview(vStack)
-        view.addSubview(bottomTableV)
         vStack.addArrangedSubview(hStack1)
         vStack.addArrangedSubview(hStack2)
-        
         hStack1.addArrangedSubview(shareView)
         hStack1.addArrangedSubview(searchView)
-        
         hStack2.addArrangedSubview(rateView)
-        hStack2.addArrangedSubview(quitApp)
-        
+        hStack2.addArrangedSubview(quitAppView)
+        view.addSubview(bottomTableV)
     }
     
     func setConstraints(){
         
-        hStack1.snp.makeConstraints { make in
-            make.left.equalTo(0)
-            make.right.equalTo(0)
-            make.height.equalTo(200)
+        shareView.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.height.equalTo(130)
+            make.width.equalTo(120)
         }
 
-        hStack2.snp.makeConstraints { make in
-            make.left.equalTo(0)
-            make.right.equalTo(0)
-            make.height.equalTo(200)
+        searchView.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.height.equalTo(130)
+            make.width.equalTo(120)
+
+        }
+
+        rateView.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.height.equalTo(130)
+            make.width.equalTo(120)
+
+        }
+
+        quitAppView.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.height.equalTo(130)
+            make.width.equalTo(120)
+
         }
         
         vStack.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(20)
             make.left.equalTo(20)
             make.right.equalTo(-20)
-            make.height.equalTo(360)
+            make.height.equalTo(view.snp.height).multipliedBy(0.4)
         }
         
         bottomTableV.snp.makeConstraints { make in
-            make.top.equalTo(vStack.snp.bottom).offset(30)
+            make.top.equalTo(vStack.snp.bottom).offset(20)
             make.left.right.equalToSuperview()
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
         }
@@ -248,7 +263,6 @@ class CustomView: UIView {
         topButton.addSubview(descLabel)
     
         fullView.snp.makeConstraints { make in
-            make.centerX.centerY.equalToSuperview()
             make.height.equalTo(130)
             make.width.equalTo(120)
         }
@@ -267,7 +281,6 @@ class CustomView: UIView {
         descLabel.snp.makeConstraints { make in
             make.centerX.equalTo(fullView)
             make.top.equalTo(iconView.snp.bottom).offset(10)
-            //make.left.equalTo(10)
         }
     }
     
