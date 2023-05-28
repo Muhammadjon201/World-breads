@@ -49,7 +49,7 @@ class HomeViewController: UIViewController {
 
 // MARK: - TABLEVIEW
 
-extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return breadsArr.count
     }
@@ -68,6 +68,18 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let scrollOffset = scrollView.contentOffset.y
+        let navigationBarHeight = navigationController?.navigationBar.frame.height ?? 0
+            
+        if scrollOffset > navigationBarHeight {
+                // Scrolling down
+           navigationController?.setNavigationBarHidden(true, animated: true)
+        } else {
+                // Scrolling up
+           navigationController?.setNavigationBarHidden(false, animated: true)
+        }
+    }
 }
 
 

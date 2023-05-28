@@ -15,7 +15,7 @@ class InfoViewController: BaseViewController {
         let view = UIImageView()
         view.clipsToBounds = true
         view.contentMode = .scaleAspectFill
-        view.backgroundColor = UIColor(red: 180/255, green: 13/255, blue: 34/255, alpha: 1)
+        view.backgroundColor = .white
         return view
     }()
     
@@ -82,10 +82,10 @@ extension InfoViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         lazy var titleLabel: UILabel = {
             let view = UILabel()
-            view.backgroundColor = .systemYellow
-            view.font = BaseFonts.chalkboardSE_Bold(size: 28)
-            view.textColor = .black
-            view.textAlignment = .left
+            view.backgroundColor = UIColor(red: 252/255, green: 60/255, blue: 68/255, alpha: 1)
+            view.font = BaseFonts.chalkboardSE_Bold(size: 20)
+            view.textColor = .white
+            view.textAlignment = .center
             view.numberOfLines = 0
             return view
         }()

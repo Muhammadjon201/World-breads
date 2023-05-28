@@ -12,7 +12,7 @@ class OneItemView: BaseView {
     lazy var rankLabel: UILabel = {
         let view = UILabel()
         view.font = BaseFonts.light(size: 16)
-        view.textColor = UIColor(red: 180/255, green: 13/255, blue: 34/255, alpha: 1)
+        view.textColor = UIColor(red: 252/255, green: 60/255, blue: 68/255, alpha: 1)
         view.textAlignment = .center
         view.numberOfLines = 1
         view.text = "Rank"
@@ -21,7 +21,7 @@ class OneItemView: BaseView {
     lazy var rankValueLabel: UILabel = {
         let view = UILabel()
         view.font = BaseFonts.light(size: 32)
-        view.textColor = UIColor(red: 180/255, green: 13/255, blue: 34/255, alpha: 1)
+        view.textColor = UIColor(red: 252/255, green: 60/255, blue: 68/255, alpha: 1)
         view.textAlignment = .center
         view.numberOfLines = 1
         return view

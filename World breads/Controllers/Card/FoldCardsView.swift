@@ -56,7 +56,7 @@ class FoldCardsView: UIView {
     }()
     
     lazy var bgColor:UIColor = {
-        var color = UIColor(red: 180/255, green: 13/255, blue: 34/255, alpha: 1)
+        var color = UIColor(red: 252/255, green: 60/255, blue: 68/255, alpha: 1)
         if let img = UIImage(named: "bg6") {
             color = UIColor(patternImage: img)
         }

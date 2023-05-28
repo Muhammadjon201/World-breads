@@ -81,7 +81,7 @@ extension CardViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
         let cell = collection.dequeueReusableCell(withReuseIdentifier: "CardCollectionCell", for: indexPath) as! CardCollectionCell
             
         let obj = arr[indexPath.row]
-        cell.foldView.shadowNumbers = 3
+        cell.foldView.shadowNumbers = 2
         cell.foldView.createConent(obj, size: makeSize(index: indexPath.row))
         cell.foldView.stars.r = Double(obj.rating ?? "") ?? 0
         
@@ -105,6 +105,19 @@ extension CardViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
             return CGSize(width: (wd-3*leftPd)/2, height: (wd-3*leftPd)/2)
         }
         return CGSize(width: wd-2*leftPd, height: (wd-3*leftPd)/2)
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let scrollOffset = scrollView.contentOffset.y
+        let navigationBarHeight = navigationController?.navigationBar.frame.height ?? 0
+            
+        if scrollOffset > navigationBarHeight {
+                // Scrolling down
+           navigationController?.setNavigationBarHidden(true, animated: true)
+        } else {
+                // Scrolling up
+           navigationController?.setNavigationBarHidden(false, animated: true)
+        }
     }
 }
     

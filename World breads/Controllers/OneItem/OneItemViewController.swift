@@ -33,7 +33,6 @@ extension OneItemViewController {
         view.backgroundColor = .white
         guard let obj = object else { return }
         optionsView.createContent(obj)
-        
     }
     func addedSubViews(){
         view.addSubview(optionsView)

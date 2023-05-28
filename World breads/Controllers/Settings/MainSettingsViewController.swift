@@ -18,6 +18,17 @@ class MainSettingsViewController: UIViewController {
         return bottomTableV
     }()
     
+    lazy var contactBtn: UIButton = {
+        let contactBtn = UIButton()
+        contactBtn.setTitle("🧑🏻‍💻 Contact the developer", for: .normal)
+        let color = UIColor(red: 252/255, green: 60/255, blue: 68/255, alpha: 1)
+        contactBtn.setTitleColor(UIColor.white, for: .normal)
+        contactBtn.backgroundColor = color
+        contactBtn.layer.cornerRadius = 10
+        contactBtn.addTarget(self, action: #selector(contactBtnTapped), for: .touchUpInside)
+        return contactBtn
+    }()
+    
     lazy var hStack1: UIStackView = {
         let hStack1 = UIStackView()
         hStack1.axis = .horizontal
@@ -76,6 +87,12 @@ class MainSettingsViewController: UIViewController {
     
     // MARK: - Button Implementations..
     
+    @objc func contactBtnTapped(){
+        if let url = URL(string: "https://www.linkedin.com/in/mamarasulov-muhammadjon-562b29201/") {
+            UIApplication.shared.open(url)
+        }
+    }
+    
     @objc func shareTapped() {
         let  id = 235385347689374
         let vc = UIActivityViewController(activityItems: ["https://apps.apple.com/\(id)"], applicationActivities: nil)
@@ -130,7 +147,7 @@ class MainSettingsViewController: UIViewController {
         bottomTableV.dataSource = self
         bottomTableV.register(MainSettingsTableViewCell.self, forCellReuseIdentifier: "MainSettingsTableViewCell")
         
-        bottomArr.append(MyData(name: "    This application is called \"Learning World Breads\" and contains very interesting and useful information. In the Home section of this application, you can get acquainted with the hundred most famous breads in the world, as well as their type, origin, bright image and a detailed review. Through the app, you can get information about several different types of breads and foods. The app also includes favourite, cards, quizzes, information and settings section, which not only makes it easier for users to use the app, but also improves the functionality of the app. You can test your knowledge and answer questions through our wonderful, interesting and fun quiz. Please share it with others and rate it. \n\nWe wish you have an interesting stay!"))
+        bottomArr.append(MyData(name: "    This application is called \"Learning World Breads\" and contains very interesting and useful information. In the Home section of this application, you can get acquainted with the hundred most famous breads in the world, as well as their type, origin, bright image and a detailed review. Through the app, you can get information about several different types of breads and foods. The app also includes favourite, cards, information and settings section, which not only makes it easier for users to use the app, but also improves the functionality of the app. We will add some interesting features to the app and keep you updated!  Please share it with others and rate it. If you have any questions or suggestions to improve application, please contact the developer. \n\nWe wish you have an interesting stay!"))
     }
         
     func initViews(){
@@ -146,6 +163,7 @@ class MainSettingsViewController: UIViewController {
         hStack1.addArrangedSubview(searchView)
         hStack2.addArrangedSubview(rateView)
         hStack2.addArrangedSubview(quitAppView)
+        view.addSubview(contactBtn)
         view.addSubview(bottomTableV)
     }
     
@@ -175,7 +193,13 @@ class MainSettingsViewController: UIViewController {
             make.centerY.equalToSuperview()
             make.height.equalTo(130)
             make.width.equalTo(120)
-
+        }
+        
+        contactBtn.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(vStack.snp.bottom).offset(10)
+            make.height.equalTo(40)
+            make.width.equalTo(300)
         }
         
         vStack.snp.makeConstraints { make in
@@ -186,7 +210,7 @@ class MainSettingsViewController: UIViewController {
         }
         
         bottomTableV.snp.makeConstraints { make in
-            make.top.equalTo(vStack.snp.bottom).offset(20)
+            make.top.equalTo(contactBtn.snp.bottom).offset(20)
             make.left.right.equalToSuperview()
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
         }

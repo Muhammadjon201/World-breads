@@ -39,7 +39,7 @@ class TabBarController: UITabBarController {
         makeTabItem(tabArr[0]),
         makeTabItem(tabArr[1]),
         makeTabItem(tabArr[2]),
-        makeTabItem(tabArr[2])
+        makeTabItem(tabArr[3])
     ]
     
     override func viewDidLoad() {

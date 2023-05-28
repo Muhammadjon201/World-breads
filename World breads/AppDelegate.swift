@@ -17,7 +17,7 @@ var window: UIWindow?
         window = UIWindow()
         setTabBar()
         setNavBar()
-        let vc = WelcomeViewController()
+        let vc = LaunchAnimationViewController()
         let nc = UINavigationController(rootViewController: vc)
         
         window?.rootViewController = nc
@@ -26,8 +26,8 @@ var window: UIWindow?
     }
     
     func setTabBar() {
-            let selColor =  UIColor(red: 180/255, green: 13/255, blue: 34/255, alpha: 1)
-            let normColor = UIColor(red: 79/255, green: 60/255, blue: 56/255, alpha: 1)
+            let selColor = UIColor(red: 252/255, green: 60/255, blue: 68/255, alpha: 1)
+            let normColor = UIColor.gray
             let appearance = UITabBarAppearance()
             appearance.configureWithOpaqueBackground()
             appearance.backgroundColor = .white
