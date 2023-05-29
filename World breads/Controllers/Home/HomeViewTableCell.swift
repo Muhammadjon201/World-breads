@@ -183,20 +183,42 @@ class HomeTableViewCell: BaseTableViewCell {
             make.left.equalTo(10)
             make.bottom.right.equalTo(-10)
         }
-            }
+    }
             
-            func createContent(_ obj: Bread){
-                rankValueLabel.text = obj.rank ?? ""
-                typeLabel.text = obj.type ?? ""
-                nameLabel.text = obj.name ?? ""
-                flagIcon.sd_setImage(with: URL(string: obj.flag ?? ""), placeholderImage: UIImage(named: "placeholder"))
-                locationLabel.text = obj.loc ?? ""
-                locationIcon.sd_setImage(with: URL(string: obj.locImg ?? ""), placeholderImage: UIImage(named: "placeholder"))
-                img.sd_setImage(with: URL(string: obj.img ?? ""), placeholderImage: UIImage(named: "placeholder"))
-                descLabel.text = obj.desc ?? ""
-            }
-        }
+      func createContent(_ obj: Bread){
+          rankValueLabel.text = obj.rank ?? ""
+          typeLabel.text = obj.type ?? ""
+          nameLabel.text = obj.name ?? ""
+          flagIcon.sd_setImage(with: URL(string: obj.flag ?? ""), placeholderImage: UIImage(named: "placeholder"))
+          locationLabel.text = obj.loc ?? ""
+          locationIcon.sd_setImage(with: URL(string: obj.locImg ?? ""), placeholderImage: UIImage(named: "placeholder"))
+          img.sd_setImage(with: URL(string: obj.img ?? ""), placeholderImage: UIImage(named: "placeholder"))
+          descLabel.text = obj.desc ?? ""
+      }
+    
+     func updateAppearance(){
+        if traitCollection.userInterfaceStyle == .dark {
+            verticalyView.backgroundColor = .white
+            typeLabel.textColor = .white
+            nameLabel.textColor = .white
+            locationLabel.textColor = .white
+            descLabel.textColor = .white
+        } else {
+            verticalyView.backgroundColor = .black
+            typeLabel.textColor = .black
+            nameLabel.textColor = .black
+            locationLabel.textColor = .black
+            descLabel.textColor = .black
 
+        }
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        updateAppearance()
+    }
+    
+}
 
 class BaseTableViewCell: UITableViewCell {
     
