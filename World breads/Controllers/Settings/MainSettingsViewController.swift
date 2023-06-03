@@ -66,21 +66,15 @@ class MainSettingsViewController: UIViewController {
         return rateView
     }()
     
-    lazy var quitAppView: CustomView = {
-        let quitApp = CustomView()
-        quitApp.makeDesignContent(color: BaseColor.quitIconColor(), iconName: "log-out", text: "Quit App")
-        quitApp.descLabel.text = "Developer"
-        quitApp.topButton.addTarget(self, action: #selector(quitTapped), for: .touchUpInside)
-        return quitApp
+    lazy var contactDev: CustomView = {
+        let contactDev = CustomView()
+        contactDev.makeDesignContent(color: BaseColor.quitIconColor(), iconName: "log-out", text: "Quit App")
+        contactDev.descLabel.text = "Developer"
+        contactDev.topButton.addTarget(self, action: #selector(quitTapped), for: .touchUpInside)
+        return contactDev
     }()
     
     // MARK: - Button Implementations..
-    
-    @objc func contactBtnTapped(){
-        if let url = URL(string: "https://www.linkedin.com/in/mamarasulov-muhammadjon-562b29201/") {
-            UIApplication.shared.open(url)
-        }
-    }
     
     @objc func shareTapped() {
         let  id = 235385347689374
@@ -153,7 +147,7 @@ class MainSettingsViewController: UIViewController {
         hStack1.addArrangedSubview(shareView)
         hStack1.addArrangedSubview(searchView)
         hStack2.addArrangedSubview(rateView)
-        hStack2.addArrangedSubview(quitAppView)
+        hStack2.addArrangedSubview(contactDev)
         view.addSubview(bottomTableV)
         
     }
@@ -180,7 +174,7 @@ class MainSettingsViewController: UIViewController {
 
         }
 
-        quitAppView.snp.makeConstraints { make in
+        contactDev.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
             make.height.equalTo(130)
             make.width.equalTo(120)
