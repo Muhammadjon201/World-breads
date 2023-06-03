@@ -36,7 +36,6 @@ class MainSettingsTableViewCell: UITableViewCell {
             make.left.equalTo(20)
             make.right.equalTo(-10)
             make.bottom.equalTo(-10)
-            
         }
     }
     
