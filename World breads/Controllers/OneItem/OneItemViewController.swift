@@ -56,6 +56,5 @@ extension OneItemViewController {
     @objc func searchClicked(){
         print("Search")
     }
-
 }
 

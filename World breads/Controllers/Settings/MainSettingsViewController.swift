@@ -9,24 +9,13 @@ import UIKit
 import SnapKit
 
 class MainSettingsViewController: UIViewController {
-    
+
     // TableView stuff..
     var bottomArr = [MyData]()
         
     lazy var bottomTableV: UITableView = {
         let bottomTableV = UITableView()
         return bottomTableV
-    }()
-    
-    lazy var contactBtn: UIButton = {
-        let contactBtn = UIButton()
-        contactBtn.setTitle("🧑🏻‍💻 Contact the developer", for: .normal)
-        let color = UIColor(red: 252/255, green: 60/255, blue: 68/255, alpha: 1)
-        contactBtn.setTitleColor(UIColor.white, for: .normal)
-        contactBtn.backgroundColor = color
-        contactBtn.layer.cornerRadius = 10
-        contactBtn.addTarget(self, action: #selector(contactBtnTapped), for: .touchUpInside)
-        return contactBtn
     }()
     
     lazy var hStack1: UIStackView = {
@@ -80,7 +69,7 @@ class MainSettingsViewController: UIViewController {
     lazy var quitAppView: CustomView = {
         let quitApp = CustomView()
         quitApp.makeDesignContent(color: BaseColor.quitIconColor(), iconName: "log-out", text: "Quit App")
-        quitApp.descLabel.text = "Quit App"
+        quitApp.descLabel.text = "Developer"
         quitApp.topButton.addTarget(self, action: #selector(quitTapped), for: .touchUpInside)
         return quitApp
     }()
@@ -116,11 +105,13 @@ class MainSettingsViewController: UIViewController {
     }
     
     @objc func quitTapped() {
-        let alert = UIAlertController(title: "Quit App?", message: "If you want to exit the app, click the Quit Now button. This will stop application stop working. Do you want to quit now?", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Quit Now", style: .destructive, handler: { _ in
-            exit(0)
+        let alert = UIAlertController(title: "Want to contact developer?", message: "If you have a question or suggestion to improve the application, You can contact the developer", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Contact", style: .default, handler: { _ in
+            if let url = URL(string: "https://www.linkedin.com/in/mamarasulov-muhammadjon-562b29201/") {
+                UIApplication.shared.open(url)
+            }
         }))
-        alert.addAction(UIAlertAction(title: "Later", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Later", style: .destructive, handler: nil))
         self.present(alert, animated: true)
     }
     
@@ -163,8 +154,8 @@ class MainSettingsViewController: UIViewController {
         hStack1.addArrangedSubview(searchView)
         hStack2.addArrangedSubview(rateView)
         hStack2.addArrangedSubview(quitAppView)
-        view.addSubview(contactBtn)
         view.addSubview(bottomTableV)
+        
     }
     
     func setConstraints(){
@@ -195,13 +186,6 @@ class MainSettingsViewController: UIViewController {
             make.width.equalTo(120)
         }
         
-        contactBtn.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
-            make.top.equalTo(vStack.snp.bottom).offset(10)
-            make.height.equalTo(40)
-            make.width.equalTo(300)
-        }
-        
         vStack.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(20)
             make.left.equalTo(20)
@@ -210,7 +194,7 @@ class MainSettingsViewController: UIViewController {
         }
         
         bottomTableV.snp.makeConstraints { make in
-            make.top.equalTo(contactBtn.snp.bottom).offset(20)
+            make.top.equalTo(vStack.snp.bottom).offset(20)
             make.left.right.equalToSuperview()
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
         }

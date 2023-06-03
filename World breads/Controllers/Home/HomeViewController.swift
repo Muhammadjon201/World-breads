@@ -43,7 +43,6 @@ class HomeViewController: UIViewController {
         let attributedStr = NSAttributedString(string: "Top Breads WorldWide", attributes: [.font: BaseFonts.thonburi_Bold(size: 18), .foregroundColor: UIColor.black])
         myTitleLabel.attributedText = attributedStr
         navigationItem.titleView = myTitleLabel
-        
     }
 }
 
@@ -68,18 +67,18 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let scrollOffset = scrollView.contentOffset.y
-        let navigationBarHeight = navigationController?.navigationBar.frame.height ?? 0
-            
-        if scrollOffset > navigationBarHeight {
-                // Scrolling down
-           navigationController?.setNavigationBarHidden(true, animated: true)
-        } else {
-                // Scrolling up
-           navigationController?.setNavigationBarHidden(false, animated: true)
-        }
-    }
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        let scrollOffset = scrollView.contentOffset.y
+//        let navigationBarHeight = navigationController?.navigationBar.frame.height ?? 0
+//            
+//        if scrollOffset > navigationBarHeight {
+//                // Scrolling down
+//           navigationController?.setNavigationBarHidden(true, animated: true)
+//        } else {
+//                // Scrolling up
+//           navigationController?.setNavigationBarHidden(false, animated: true)
+//        }
+//    }
 }
 
 
