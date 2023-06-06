@@ -66,19 +66,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         vc.object = breadsArr[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        let scrollOffset = scrollView.contentOffset.y
-//        let navigationBarHeight = navigationController?.navigationBar.frame.height ?? 0
-//            
-//        if scrollOffset > navigationBarHeight {
-//                // Scrolling down
-//           navigationController?.setNavigationBarHidden(true, animated: true)
-//        } else {
-//                // Scrolling up
-//           navigationController?.setNavigationBarHidden(false, animated: true)
-//        }
-//    }
 }
 
 
