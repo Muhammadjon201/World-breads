@@ -11,7 +11,8 @@ class InfoTableViewCell: UITableViewCell {
     
     lazy var titleLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.chalkboardSE_Bold(size: 24)
+        view.font = UIFont(name: "", size: 24)
+        //view.font = BaseFonts.chalkboardSE_Bold(size: 24)
         view.textColor = .white
         view.textAlignment = .left
         view.numberOfLines = 0
@@ -19,8 +20,8 @@ class InfoTableViewCell: UITableViewCell {
     }()
     lazy var descLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.verdana_Bold(size: 17)
-        view.textColor = BaseColor.shareIconColor()
+        //view.font = BaseFonts.verdana_Bold(size: 17)
+        //view.textColor = BaseColor.shareIconColor()
         view.textAlignment = .left
         view.contentMode = .scaleAspectFill
         view.numberOfLines = 0

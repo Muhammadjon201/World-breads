@@ -67,7 +67,7 @@ class InfoViewController: BaseViewController {
     
     func setNavigationBar() {
         let myTitleLabel = UILabel()
-        let attributedStr = NSAttributedString(string: "About Breads", attributes: [.font: BaseFonts.thonburi_Bold(size: 18), .foregroundColor: UIColor.black])
+        let attributedStr = NSAttributedString(string: "About Breads", attributes: [.font: UIFont.systemFont(ofSize: 16), .foregroundColor: UIColor.black])
         myTitleLabel.attributedText = attributedStr
         navigationItem.titleView = myTitleLabel
     }
@@ -83,7 +83,7 @@ extension InfoViewController: UITableViewDelegate, UITableViewDataSource {
         lazy var titleLabel: UILabel = {
             let view = UILabel()
             view.backgroundColor = UIColor(red: 252/255, green: 60/255, blue: 68/255, alpha: 1)
-            view.font = BaseFonts.chalkboardSE_Bold(size: 20)
+            view.font = BaseFonts.thonburi_Bold(size: 20)
             view.textColor = .white
             view.textAlignment = .center
             view.numberOfLines = 0

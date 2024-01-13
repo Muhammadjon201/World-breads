@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D597E9C62A22BC1700112003 /* RateAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D597E9C52A22BC1700112003 /* RateAppViewController.swift */; };
 		D597E9C92A22F89600112003 /* LaunchAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D597E9C82A22F89600112003 /* LaunchAnimationViewController.swift */; };
 		D59996D52944C89E0025F7F8 /* BaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59996D42944C89E0025F7F8 /* BaseExtensions.swift */; };
 		D59996D72944C95F0025F7F8 /* BaseCustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59996D62944C95F0025F7F8 /* BaseCustomViews.swift */; };
@@ -42,7 +41,6 @@
 		7EBE61281A451995872CD182 /* Pods-World breads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-World breads.release.xcconfig"; path = "Target Support Files/Pods-World breads/Pods-World breads.release.xcconfig"; sourceTree = "<group>"; };
 		856ADFBF3C31EE7A35D1BA2A /* Pods_World_breads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_World_breads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD38E7361EE77B897BB07375 /* Pods-World breads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-World breads.debug.xcconfig"; path = "Target Support Files/Pods-World breads/Pods-World breads.debug.xcconfig"; sourceTree = "<group>"; };
-		D597E9C52A22BC1700112003 /* RateAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateAppViewController.swift; sourceTree = "<group>"; };
 		D597E9C82A22F89600112003 /* LaunchAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAnimationViewController.swift; sourceTree = "<group>"; };
 		D59996D42944C89E0025F7F8 /* BaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseExtensions.swift; sourceTree = "<group>"; };
 		D59996D62944C95F0025F7F8 /* BaseCustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCustomViews.swift; sourceTree = "<group>"; };
@@ -173,7 +171,6 @@
 				D59DC073293656D8009D935A /* SettingsTableViewCell.swift */,
 				D5B1B13F293A397B00A20669 /* MainSettingsViewController.swift */,
 				D5D24A88293E280400AFEC5C /* MainSettingsTableViewCell.swift */,
-				D597E9C52A22BC1700112003 /* RateAppViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -381,7 +378,6 @@
 				D59DC074293656D8009D935A /* SettingsTableViewCell.swift in Sources */,
 				D5D24AAC2940169F00AFEC5C /* CardCollectionCell.swift in Sources */,
 				D59DC07229364A39009D935A /* SettingsViewController.swift in Sources */,
-				D597E9C62A22BC1700112003 /* RateAppViewController.swift in Sources */,
 				D5D24ABA2940EAE700AFEC5C /* OneItemViewController.swift in Sources */,
 				D5D24ABE2940ECA700AFEC5C /* StarRatingView.swift in Sources */,
 				D5D24AB72940E50800AFEC5C /* FoldCardsView.swift in Sources */,
@@ -522,16 +518,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T7C6N2U8Z3;
+				DEVELOPMENT_TEAM = SQB47CP5D4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "World breads/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -540,9 +538,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "muhammadjon.com.World-breads";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -552,16 +553,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T7C6N2U8Z3;
+				DEVELOPMENT_TEAM = SQB47CP5D4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "World breads/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -570,9 +573,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "muhammadjon.com.World-breads";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

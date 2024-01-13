@@ -65,7 +65,7 @@ class CardViewController: UIViewController {
     
     func setNavigationBar() {
         let myTitleLabel = UILabel()
-        let attributedStr = NSAttributedString(string: "All Breads in Fold Card", attributes: [.font: BaseFonts.thonburi_Bold(size: 18), .foregroundColor: UIColor.black])
+        let attributedStr = NSAttributedString(string: "All Breads in Fold Card", attributes: [.font: UIFont.systemFont(ofSize: 16), .foregroundColor: UIColor.black])
         myTitleLabel.attributedText = attributedStr
         navigationItem.titleView = myTitleLabel
     }
@@ -81,7 +81,7 @@ extension CardViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
         let cell = collection.dequeueReusableCell(withReuseIdentifier: "CardCollectionCell", for: indexPath) as! CardCollectionCell
             
         let obj = arr[indexPath.row]
-        cell.foldView.shadowNumbers = 2
+        cell.foldView.shadowNumbers = 1
         cell.foldView.createConent(obj, size: makeSize(index: indexPath.row))
         cell.foldView.stars.r = Double(obj.rating ?? "") ?? 0
         

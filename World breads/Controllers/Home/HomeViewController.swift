@@ -40,7 +40,7 @@ class HomeViewController: UIViewController {
     
     func setNavigationBar() {
         let myTitleLabel = UILabel()
-        let attributedStr = NSAttributedString(string: "Top Breads WorldWide", attributes: [.font: BaseFonts.thonburi_Bold(size: 18), .foregroundColor: UIColor.black])
+        let attributedStr = NSAttributedString(string: "Top Breads WorldWide", attributes: [.font: UIFont.systemFont(ofSize: 16), .foregroundColor: UIColor.black])
         myTitleLabel.attributedText = attributedStr
         navigationItem.titleView = myTitleLabel
     }

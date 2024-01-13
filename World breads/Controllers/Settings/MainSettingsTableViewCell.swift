@@ -21,8 +21,7 @@ class MainSettingsTableViewCell: UITableViewCell {
     lazy var bottomLabel: UILabel = {
         let bottomLabel = UILabel()
         bottomLabel.numberOfLines = 0
-        bottomLabel.font = BaseFonts.verdana_Bold(size: 17)
-        bottomLabel.textColor = BaseColor.shareIconColor()
+        
         return bottomLabel
     }()
 

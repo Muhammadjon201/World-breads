@@ -43,11 +43,11 @@ class SettingsTableViewCell: UITableViewCell {
         contentImage.layer.cornerRadius = 10
         
         nameLabel.numberOfLines = 1
-        nameLabel.font = BaseFonts.light(size: 18)
+        nameLabel.font = UIFont.systemFont(ofSize: 18)
         nameLabel.textAlignment = .left
         
         typeLabel.numberOfLines = 1
-        typeLabel.font = BaseFonts.light(size: 18)
+        typeLabel.font = UIFont.systemFont(ofSize: 18)
         typeLabel.textAlignment = .left
         
         mapImage.clipsToBounds = true

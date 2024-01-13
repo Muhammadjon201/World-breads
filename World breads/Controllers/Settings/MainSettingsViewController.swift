@@ -21,35 +21,10 @@ class MainSettingsViewController: UIViewController {
     lazy var hStack1: UIStackView = {
         let hStack1 = UIStackView()
         hStack1.axis = .horizontal
+        hStack1.spacing = 60
         hStack1.distribution = .fillEqually
-        hStack1.spacing = 10
         hStack1.alignment = .center
         return hStack1
-    }()
-    
-    lazy var hStack2: UIStackView = {
-        let hStack2 = UIStackView()
-        hStack2.axis = .horizontal
-        hStack2.distribution = .fillEqually
-        hStack2.spacing = 10
-        hStack2.alignment = .center
-        return hStack2
-    }()
-    
-    
-    lazy var vStack: UIStackView = {
-        let vStack = UIStackView()
-        vStack.axis = .vertical
-        vStack.distribution = .fillEqually
-        vStack.alignment = .center
-        return vStack
-    }()
-    
-    lazy var shareView: CustomView = {
-        let shareView = CustomView()
-        shareView.makeDesignContent(color: BaseColor.shareIconColor(), iconName: "share", text: "Share")
-        shareView.topButton.addTarget(self, action: #selector(shareTapped), for: .touchUpInside)
-        return shareView
     }()
     
     lazy var searchView: CustomView = {
@@ -59,46 +34,22 @@ class MainSettingsViewController: UIViewController {
         return searchView
     }()
     
-    lazy var rateView: CustomView = {
-        let rateView = CustomView()
-        rateView.makeDesignContent(color: BaseColor.rateIconColor(), iconName: "rating", text: "Rate App")
-        rateView.topButton.addTarget(self, action: #selector(rateTapped), for: .touchUpInside)
-        return rateView
-    }()
-    
     lazy var contactDev: CustomView = {
         let contactDev = CustomView()
         contactDev.makeDesignContent(color: BaseColor.quitIconColor(), iconName: "log-out", text: "Quit App")
         contactDev.descLabel.text = "Developer"
-        contactDev.topButton.addTarget(self, action: #selector(quitTapped), for: .touchUpInside)
+        contactDev.topButton.addTarget(self, action: #selector(contactTapped), for: .touchUpInside)
         return contactDev
     }()
     
     // MARK: - Button Implementations..
-    
-    @objc func shareTapped() {
-        let  id = 235385347689374
-        let vc = UIActivityViewController(activityItems: ["https://apps.apple.com/\(id)"], applicationActivities: nil)
-        vc.popoverPresentationController?.sourceView = self.view
-        self.present(vc, animated: true, completion: nil)
-        
-    }
     
     @objc func searchTapped() {
         let vc = SearchViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    @objc func rateTapped() {
-        let vc = RateAppViewController()
-        
-        let savedRating = UserDefaults.standard.integer(forKey: "AppRating")
-        vc.selectedRating = savedRating
-        
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    @objc func quitTapped() {
+    @objc func contactTapped() {
         let alert = UIAlertController(title: "Want to contact developer?", message: "If you have a question or suggestion to improve the application, You can contact the developer", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Contact", style: .default, handler: { _ in
             if let url = URL(string: "https://www.linkedin.com/in/mamarasulov-muhammadjon-562b29201/") {
@@ -121,7 +72,7 @@ class MainSettingsViewController: UIViewController {
     
     func setNavigationBar() {
         let myTitleLabel = UILabel()
-        let attributedStr = NSAttributedString(string: "Main Settings", attributes: [.font: BaseFonts.thonburi_Bold(size: 18), .foregroundColor: UIColor.black])
+        let attributedStr = NSAttributedString(string: "Main Settings", attributes: [.font: UIFont.systemFont(ofSize: 16), .foregroundColor: UIColor.black])
         myTitleLabel.attributedText = attributedStr
         navigationItem.titleView = myTitleLabel
         
@@ -130,6 +81,7 @@ class MainSettingsViewController: UIViewController {
     func tableViewSetUp() {
         bottomTableV.delegate = self
         bottomTableV.dataSource = self
+        bottomTableV.showsVerticalScrollIndicator = false
         bottomTableV.register(MainSettingsTableViewCell.self, forCellReuseIdentifier: "MainSettingsTableViewCell")
         
         bottomArr.append(MyData(name: "    This application is called \"Learning World Breads\" and contains very interesting and useful information. In the Home section of this application, you can get acquainted with the hundred most famous breads in the world, as well as their type, origin, bright image and a detailed review. Through the app, you can get information about several different types of breads and foods. The app also includes favourite, cards, information and settings section, which not only makes it easier for users to use the app, but also improves the functionality of the app. We will add some interesting features to the app and keep you updated!  Please share it with others and rate it. If you have any questions or suggestions to improve application, please contact the developer. \n\nWe wish you have an interesting stay!"))
@@ -141,54 +93,35 @@ class MainSettingsViewController: UIViewController {
     }
     
     func addedSubviews(){
-        view.addSubview(vStack)
-        vStack.addArrangedSubview(hStack1)
-        vStack.addArrangedSubview(hStack2)
-        hStack1.addArrangedSubview(shareView)
+        view.addSubview(hStack1)
+        hStack1.addArrangedSubview(contactDev)
         hStack1.addArrangedSubview(searchView)
-        hStack2.addArrangedSubview(rateView)
-        hStack2.addArrangedSubview(contactDev)
+    
         view.addSubview(bottomTableV)
         
     }
     
     func setConstraints(){
         
-        shareView.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.height.equalTo(130)
-            make.width.equalTo(120)
+        hStack1.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(70)
+            make.centerX.equalToSuperview()
         }
 
         searchView.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.height.equalTo(130)
-            make.width.equalTo(120)
-
-        }
-
-        rateView.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
             make.height.equalTo(130)
             make.width.equalTo(120)
 
         }
 
         contactDev.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
             make.height.equalTo(130)
             make.width.equalTo(120)
         }
         
-        vStack.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(20)
-            make.left.equalTo(20)
-            make.right.equalTo(-20)
-            make.height.equalTo(view.snp.height).multipliedBy(0.4)
-        }
         
         bottomTableV.snp.makeConstraints { make in
-            make.top.equalTo(vStack.snp.bottom).offset(20)
+            make.top.equalTo(hStack1.snp.bottom).offset(70)
             make.left.right.equalToSuperview()
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
         }
@@ -255,7 +188,7 @@ class CustomView: UIView {
         iconView.image = UIImage(named: iconName)?.withRenderingMode(.alwaysTemplate)
         iconView.tintColor = color
         descLabel.textColor = color
-        fullView.backgroundColor = color.withAlphaComponent(0.3)
+        fullView.backgroundColor = color.withAlphaComponent(0.5)
     }
     
     func setUp() {

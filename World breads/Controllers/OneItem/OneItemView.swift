@@ -11,7 +11,7 @@ class OneItemView: BaseView {
     
     lazy var rankLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.light(size: 16)
+        view.font = UIFont.systemFont(ofSize: 16)
         view.textColor = UIColor(red: 252/255, green: 60/255, blue: 68/255, alpha: 1)
         view.textAlignment = .center
         view.numberOfLines = 1
@@ -20,7 +20,7 @@ class OneItemView: BaseView {
     }()
     lazy var rankValueLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.light(size: 32)
+        view.font = UIFont.systemFont(ofSize: 32)
         view.textColor = UIColor(red: 252/255, green: 60/255, blue: 68/255, alpha: 1)
         view.textAlignment = .center
         view.numberOfLines = 1
@@ -33,16 +33,14 @@ class OneItemView: BaseView {
     }()
     lazy var typeLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.extraLight(size: 14)
-        view.textColor = .black
+        view.font = UIFont.systemFont(ofSize: 16)
         view.textAlignment = .center
         view.numberOfLines = 1
         return view
     }()
     lazy var nameLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.bold(size: 18)
-        view.textColor = .black
+        view.font = UIFont.systemFont(ofSize: 18)
         view.textAlignment = .center
         view.numberOfLines = 1
         return view
@@ -58,7 +56,7 @@ class OneItemView: BaseView {
     }()
     lazy var locationLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.light(size: 16)
+        view.font = UIFont.systemFont(ofSize: 16)
         view.textColor = .black
         view.textAlignment = .center
         view.numberOfLines = 1
@@ -66,7 +64,7 @@ class OneItemView: BaseView {
     }()
     lazy var ratingLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.light(size: 16)
+        view.font = UIFont.systemFont(ofSize: 16)
         view.textColor = .black
         view.textAlignment = .center
         view.numberOfLines = 1
@@ -108,7 +106,7 @@ class OneItemView: BaseView {
     }()
     lazy var starLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.light(size: 26)
+        view.font = UIFont.systemFont(ofSize: 26)
         view.textColor = .black
         view.textAlignment = .center
         view.numberOfLines = 1
@@ -116,7 +114,7 @@ class OneItemView: BaseView {
     }()
     lazy var descLabel: UITextView = {
         let view = UITextView()
-        view.font = BaseFonts.light(size: 16)
+        view.font = UIFont.systemFont(ofSize: 16)
         view.textColor = .black
         view.textAlignment = .center
         return view

@@ -12,7 +12,7 @@ class HomeTableViewCell: BaseTableViewCell {
     
     lazy var rankLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.light(size: 16)
+        view.font = UIFont.systemFont(ofSize: 16)
         view.textColor = UIColor(red: 252/255, green: 60/255, blue: 68/255, alpha: 1)
         view.textAlignment = .center
         view.numberOfLines = 1
@@ -21,7 +21,7 @@ class HomeTableViewCell: BaseTableViewCell {
     }()
     lazy var rankValueLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.light(size: 32)
+        view.font = UIFont.systemFont(ofSize: 32)
         view.textColor = UIColor(red: 252/255, green: 60/255, blue: 68/255, alpha: 1)
         view.textAlignment = .center
         view.numberOfLines = 1
@@ -34,7 +34,7 @@ class HomeTableViewCell: BaseTableViewCell {
     }()
     lazy var typeLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.light(size: 18)
+        view.font = UIFont.systemFont(ofSize: 18)
         view.textColor = .black
         view.textAlignment = .center
         view.numberOfLines = 1
@@ -42,7 +42,7 @@ class HomeTableViewCell: BaseTableViewCell {
     }()
     lazy var nameLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.light(size: 18)
+        view.font = UIFont.systemFont(ofSize: 18)
         view.textColor = .black
         view.textAlignment = .center
         view.numberOfLines = 1
@@ -59,7 +59,7 @@ class HomeTableViewCell: BaseTableViewCell {
     }()
     lazy var locationLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.light(size: 18)
+        view.font = UIFont.systemFont(ofSize: 18)
         view.textColor = .black
         view.textAlignment = .center
         view.numberOfLines = 1
@@ -67,7 +67,7 @@ class HomeTableViewCell: BaseTableViewCell {
     }()
     lazy var ratingLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.light(size: 18)
+        view.font = UIFont.systemFont(ofSize: 18)
         view.textColor = .black
         view.textAlignment = .center
         view.numberOfLines = 1
@@ -102,7 +102,7 @@ class HomeTableViewCell: BaseTableViewCell {
     }()
     lazy var descLabel: UILabel = {
         let view = UILabel()
-        view.font = BaseFonts.light(size: 16)
+        view.font = UIFont.systemFont(ofSize: 16)
         view.textColor = .black
         view.textAlignment = .center
         view.numberOfLines = 3
@@ -256,7 +256,7 @@ struct BaseColor {
         UIColor(red: 234/255, green: 254/255, blue: 230/255, alpha: 1)
     }
     static func searchIconColor() -> UIColor {
-        UIColor(red: 117/255, green: 251/255, blue: 76/255, alpha: 1)
+        UIColor(red: 0/255, green: 96/255, blue: 57/255, alpha: 1)
     }
     static func rateColor() -> UIColor {
         UIColor(red: 253/255, green: 241/255, blue: 231/255, alpha: 1)
