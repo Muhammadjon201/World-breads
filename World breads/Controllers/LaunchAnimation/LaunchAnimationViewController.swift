@@ -8,6 +8,7 @@
 import UIKit
 
 class LaunchAnimationViewController: UIViewController {
+    
     private let imageView = UIImageView()
     
     override func viewDidLoad() {
@@ -15,6 +16,7 @@ class LaunchAnimationViewController: UIViewController {
         setupImageView()
         animateImageView()
         view.backgroundColor = .white
+        navigationController?.isNavigationBarHidden = true
     }
     
     private func setupImageView() {

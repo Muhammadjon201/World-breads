@@ -117,6 +117,8 @@ class OneItemView: BaseView {
         view.font = UIFont.systemFont(ofSize: 16)
         view.textColor = .black
         view.textAlignment = .center
+        view.isEditable = false
+        view.isSelectable = false
         return view
     }()
     
